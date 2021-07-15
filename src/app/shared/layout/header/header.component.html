@@ -1,1 +1,19 @@
-<p>header works!</p>
+<div class="header">
+    <div class="home-link">
+        <a id="home" href="/"><img type="image/svg+xml" src="../../../assets/logo.png"></a>
+        <a id="home" href="/">home</a>
+    </div>
+    <div class="space"></div>
+    <div class="links">
+        <a href="#" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">link #1</a>
+        <a href="#" routerLink="/especialidades" routerLinkActive="active">Especialidades</a>
+        <a href="#" routerLink="/d" routerLinkActive="active">link #3</a>
+        <a href="#">link &#9662;</a>
+    </div>
+    <div class="space"></div>
+    <div class="auth-links">
+        <a class="btn green" href="/login">Log in</a>
+        <a class="btn yellow" href="/signup">Sign up</a>
+    </div>
+    <div class="hamburger"><a>&#9776;</a></div>
+</div>

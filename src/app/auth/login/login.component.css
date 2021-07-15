@@ -1,0 +1,40 @@
+form {
+    width: 100%;
+    height: calc(100vh - 300px);
+    background-image: url(../../../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 50%);
+    font-weight: bold;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    color: white;
+}
+
+input, button {
+    border-radius: 10px;
+    padding: 5px !important;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-height: 568px) {
+    .box {
+        padding: 30px;
+    } 
+    input, button {
+        padding: 3px !important;
+    }
+}

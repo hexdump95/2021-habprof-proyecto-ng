@@ -8,14 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
-import { EspecialidadComponent } from './especialidad/especialidad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
-    EspecialidadComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +22,6 @@ import { EspecialidadComponent } from './especialidad/especialidad.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

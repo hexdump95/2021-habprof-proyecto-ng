@@ -10,10 +10,11 @@ pipeline {
         stage('test') {
             steps {
                 echo 'test...'
-                sh 'npm run test'
+                sh 'npm run test -- --pass-with-no-tests'
             }
         }
         stage('deploy') {
+            when { branch "main" }
             steps {
                 echo 'deploy...'
                 sh 'npm run build --'
